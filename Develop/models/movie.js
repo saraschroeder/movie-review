@@ -1,13 +1,29 @@
-const User = require('./user');
-const Project = require('./review');
+const { DataTypes } = require('sequelize');
+const db = require('../config/database');
 
-User.hasMany(Project, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE'
+const Movie = db.define('Movie', {
+  title: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  director: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  year: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
+  rating: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    defaultValue: 0
+  },
+  review: {
+    type: DataTypes.STRING,
+    allowNull: true
+  }
 });
 
-Project.belongsTo(User, {
-  foreignKey: 'user_id'
-});
+module.exports = Movie;
 
-module.exports = { User, Project };
