@@ -4,7 +4,9 @@
   "description": "## Table of Contents * [Descriptions](#description) * [Installation](#installation) * [Dependencies](#dependencies) * [Usage](#usage) * [Credits](#credits) * [License](#license)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "server.js",
+    "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
