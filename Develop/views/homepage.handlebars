@@ -1,1 +1,11 @@
-Sup suckers
+<div class="container">
+  <h1>Welcome to My Movie Review App</h1>
+  <p>Check out the latest reviews, add your own reviews, and share your thoughts on your favorite movies.</p>
+  
+  {{#if currentUser}}
+    <a href="/logout" class="button">Logout</a>
+  {{else}}
+    <a href="/login" class="button">Login</a>
+    <a href="/signup" class="button">Sign Up</a>
+  {{/if}}
+</div>
