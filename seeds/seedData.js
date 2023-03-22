@@ -4,9 +4,9 @@ db.sequelize.sync({ force: true }).then(async () => {
   try {
     
     const movies = await db.Movie.bulkCreate([
-      { title: "The Shawshank Redemption", year: 1994, genre: "Drama" },
-      { title: "The Godfather", year: 1972, genre: "Crime" },
-      { title: "The Dark Knight", year: 2008, genre: "Action" }
+      { title: "Finding Nemo", year: 2003, genre: "Adventure" },
+      { title: "Step Brothers", year: 2008, genre: "Comedy" },
+      { title: "Moana", year: 2016, genre: "Animation" }
     ]);
 
     
@@ -17,9 +17,9 @@ db.sequelize.sync({ force: true }).then(async () => {
 
     
     await db.Review.bulkCreate([
-      { rating: 8.5, reviewText: "One of the best movies of all time.", movieId: movies[0].id, userId: users[0].id },
-      { rating: 9.0, reviewText: "A true masterpiece.", movieId: movies[1].id, userId: users[1].id },
-      { rating: 7.5, reviewText: "Great action and performances.", movieId: movies[2].id, userId: users[0].id }
+      { rating: 7.0, reviewText: "Subpar movie, could have been better. Felt like it went in circles", movieId: movies[0].id, userId: users[0].id },
+      { rating: 10.0, reviewText: "A true masterpiece.", movieId: movies[1].id, userId: users[1].id },
+      { rating: 6.0, reviewText: "Good movie for kids, felt as if they tried too hard to make it good and it drug on too long.", movieId: movies[2].id, userId: users[0].id }
     ]);
 
     console.log("Database seeded successfully.");
