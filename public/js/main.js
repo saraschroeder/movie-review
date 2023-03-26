@@ -2,11 +2,11 @@ const express = require('express');
 const handlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const session = require('express-session');
-const dotenv = require('dotenv');
+const dotenv = require('dotenv').config();
 const path = require('path');
 
 //api key
-const apiKey = '1e768ed5';
+const apiKey = process.env.API_KEY;
 
 dotenv.config();
 
