@@ -5,6 +5,9 @@ const session = require('express-session');
 const dotenv = require('dotenv');
 const path = require('path');
 
+//api key
+const apiKey = '1e768ed5';
+
 dotenv.config();
 
 const app = express();
@@ -35,3 +38,39 @@ app.post('/review', (req, res) => {
 app.listen(process.env.PORT || 3000, () => {
   console.log(`Server listening on port ${process.env.PORT || 3000}`);
 });
+
+
+//movie search function//
+
+function searchMovies(query) {
+  const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${query}`;
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      if(data.Response === `False`) {
+      console.log(data.Error);
+    } else {
+      const movies = data.Search;
+      const movieList = document.getElementById('movieList');
+
+      movieList.innerHTML = '';
+
+      movies.forEach(movie => {
+        const li = document.createElement('li');
+        li.textContent = movie.Title;
+        movieList.appendChild(li);
+      });
+    }
+  })
+  .catch(error => console.error(error));
+}
+
+const searhForm = document.getElementById('searchForm');
+searhForm.addEventListener('submit', event => {
+  event.preventDefault();
+  const searchInput = document.getElementById('searchInput');
+  const query = searchInput.value;
+  searchMovies(query);
+});
+
