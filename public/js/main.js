@@ -52,15 +52,33 @@ function searchMovies(query) {
       console.log(data.Error);
     } else {
       const movies = data.Search;
-      const movieList = document.getElementById('movieList');
 
-      movieList.innerHTML = '';
-
+      //i think this is how we put them into our db?
       movies.forEach(movie => {
-        const li = document.createElement('li');
-        li.textContent = movie.Title;
-        movieList.appendChild(li);
+        const sql = `
+          //INSERT INTO movies (title, year, type, poster)
+          //VALUES (?, ?, ?, ?)
+          `;
+          const values = [movie.Title, movie.Year, movie.Type, movie.Poster];
+          Connection.query(sql, values, (error, results, fields) => {
+            if (error) {
+              console.error(error);
+            } else {
+              console.log('Inserted movie:', movie.Title);
+            }
+          });
       });
+
+//previous API results getting sent to index.html
+      //const movieList = document.getElementById('movieList');
+
+      //movieList.innerHTML = '';
+
+      //movies.forEach(movie => {
+      //  const li = document.createElement('li');
+       // li.textContent = movie.Title;
+      //  movieList.appendChild(li);
+      //});
     }
   })
   .catch(error => console.error(error));
