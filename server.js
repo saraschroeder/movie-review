@@ -4,12 +4,25 @@ const routes = require('./controllers');
 const exphbs = require('express-handlebars');
 const path = require('path');
 
+//require middleware modules body-parser/cors
+const bodyParser = require('body-parser');
+const cors = require('cors');
+
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({});
+
+//add express-session as middle to express app
+app.use(
+  session({
+    secret: "mysecretkey",
+    resave: false,
+    saveUninitialized: false
+  })
+);
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
