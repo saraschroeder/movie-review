@@ -1,5 +1,7 @@
 const { DataTypes } = require('sequelize');
+//we are having trouble importing the below file
 const db = require('../config/database');
+
 
 const Movie = db.define('Movie', {
   title: {
