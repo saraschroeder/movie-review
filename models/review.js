@@ -13,3 +13,6 @@ const Review = db.define('Review', {
 });
 
 module.exports = Review;
+
+
+// NEED TO RECONFIGURE THIS!!!!!!!!!!
