@@ -2,13 +2,13 @@ const newFormHandler = async (event) => {
   event.preventDefault();
 
   const name = document.querySelector('#movie-name').value.trim();
-  const movie_ratings = document.querySelector('#movie-funding').value.trim();
+  const needed_funding = document.querySelector('#movie-funding').value.trim();
   const description = document.querySelector('#movie-desc').value.trim();
 
-  if (name && movie_ratings && description) {
+  if (name && needed_funding && description) {
     const response = await fetch(`/api/movies`, {
       method: 'POST',
-      body: JSON.stringify({ name, movie_ratings, description }),
+      body: JSON.stringify({ name, needed_funding, description }),
       headers: {
         'Content-Type': 'application/json',
       },
