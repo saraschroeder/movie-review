@@ -1,4 +1,3 @@
-//need code added here 
 const User = require('./User');
 const Movie = require('./Movie');
 
