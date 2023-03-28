@@ -1,28 +1,28 @@
 [
   {
-    "title": "The Shawshank Redemption", 
-    "director": "Frank Darabont", 
-    "yearReleased": 1994 
+    "name": "The Shawshank Redemption", 
+    "description": "Frank Darabont", 
+    "needed_funding": 1994 
   },
   {
-    "title": "The Godfather", 
-    "director": "Francis Ford Coppola", 
-    "yearReleased": 1972 
+    "name": "The Godfather", 
+    "description": "Francis Ford Coppola", 
+    "needed_funding": 1972 
   },
   {
-    "title": "The Godfather: Part II", 
-    "director": "rancis Ford Coppola", 
-    "yearReleased": 1974 
+    "name": "The Godfather: Part II", 
+    "description": "rancis Ford Coppola", 
+    "needed_funding": 1974 
   },
   {
-    "title": "The Dark Knight", 
-    "director": "Christopher Nolan", 
-    "yearReleased": 2008 
+    "name": "The Dark Knight", 
+    "description": "Christopher Nolan", 
+    "needed_funding": 2008 
   },
   {
-    "title": "12 Angry Men", 
-    "director": "Sidney Lumet", 
-    "yearReleased": 1957 
+    "name": "12 Angry Men", 
+    "description": "Sidney Lumet", 
+    "needed_funding": 1957 
   }
 ]
   

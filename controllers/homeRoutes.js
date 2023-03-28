@@ -1,11 +1,3 @@
-// const router = require('express').Router();
-
-// router.get('/', async (req, res) => {
-//     res.render('homepage');
-// });
-
-// module.exports = router;
-
 const router = require('express').Router();
 const { Movie, User } = require('../models');
 const withAuth = require('../utils/auth');
