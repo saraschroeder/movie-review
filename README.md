@@ -3,7 +3,7 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ## Description
-This is a real world full stack application that uses node.js and express js to create a restful API and uses handlebars.js as the templating engine.  MySQL and Sequelize ORM are used for database.  and we utilize GET and POST routs to retrieve and add new data.
+This is a real world full stack application that uses node.js and express.js to create a restful API and uses handlebars.js as the templating engine. MySQL and Sequelize ORM are used for database. We utilize GET and POST routs to retrieve and add new data.
  
 ## Table of contents
   - [Installation](#installation)
