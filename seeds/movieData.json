@@ -2,27 +2,27 @@
   {
     "name": "The Shawshank Redemption", 
     "description": "Frank Darabont", 
-    "needed_funding": 1994 
+    "movie_ratings": 1994 
   },
   {
     "name": "The Godfather", 
     "description": "Francis Ford Coppola", 
-    "needed_funding": 1972 
+    "movie_ratings": 1972 
   },
   {
     "name": "The Godfather: Part II", 
     "description": "rancis Ford Coppola", 
-    "needed_funding": 1974 
+    "movie_ratings": 1974 
   },
   {
     "name": "The Dark Knight", 
     "description": "Christopher Nolan", 
-    "needed_funding": 2008 
+    "movie_ratings": 2008 
   },
   {
     "name": "12 Angry Men", 
     "description": "Sidney Lumet", 
-    "needed_funding": 1957 
+    "movie_ratings": 1957 
   }
 ]
   

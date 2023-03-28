@@ -23,7 +23,7 @@ Movie.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    needed_funding: {
+    movie_ratings: {
       type: DataTypes.FLOAT,
       allowNull: false,
     },

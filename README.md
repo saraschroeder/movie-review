@@ -17,7 +17,7 @@ This is a real world full stack application that uses node.js and express.js to 
 This is a fully deployed application hosted on Heroku. No installation needed. Simply visit the application at the deployed URL.
 
 ## Usage
-Someone can use this application by searchign the data base of movies and leaving reviews of it, or they can look up a movie that they want to watch to read reviews before they spend the time to watch it. 
+Someone can use this application by searching the data base of movies and leaving reviews of it, or they can look up a movie that they want to watch to read reviews before they spend the time to watch it. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
