@@ -1,18 +1,29 @@
 [
-    {
-      "name": "Music Near Me",
-      "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-      "needed_funding": 5000
-    },
-    {
-      "name": "The Ultimate Tech Quiz",
-      "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-      "needed_funding": 10000
-    },
-    {
-      "name": "Roll 'Em Up",
-      "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-      "needed_funding": 800
-    }
-  ]
+  {
+    "title": "The Shawshank Redemption", 
+    "director": "Frank Darabont", 
+    "yearReleased": 1994 
+  },
+  {
+    "title": "The Godfather", 
+    "director": "Francis Ford Coppola", 
+    "yearReleased": 1972 
+  },
+  {
+    "title": "The Godfather: Part II", 
+    "director": "rancis Ford Coppola", 
+    "yearReleased": 1974 
+  },
+  {
+    "title": "The Dark Knight", 
+    "director": "Christopher Nolan", 
+    "yearReleased": 2008 
+  },
+  {
+    "title": "12 Angry Men", 
+    "director": "Sidney Lumet", 
+    "yearReleased": 1957 
+  }
+]
   
+
