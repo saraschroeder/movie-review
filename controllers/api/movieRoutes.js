@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const { Movie } = require('../../models');
 const withAuth = require('../../utils/auth');
-
 router.post('/', withAuth, async (req, res) => {
+  console.log("we are here");
   try {
     const newMovie = await Movie.create({
       ...req.body,
@@ -11,6 +11,7 @@ router.post('/', withAuth, async (req, res) => {
 
     res.status(200).json(newMovie);
   } catch (err) {
+    console.error(err);
     res.status(400).json(err);
   }
 });

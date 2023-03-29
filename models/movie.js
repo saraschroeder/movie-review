@@ -20,8 +20,9 @@ Movie.init(
       allowNull: false,
     },
     imdbID: {
-      type: DataTypes.FLOAT,
-      allowNull: false,
+      type: DataTypes.STRING,
+      allowNull: true,
+      defaultValue: "",
     },
     date_created: {
       type: DataTypes.DATE,
