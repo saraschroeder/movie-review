@@ -77,9 +77,11 @@ p {
 }
 
 .rating {
+  display: flex;
   width: 180px;
-  justify-items: center;
-  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  
   
 
 }
