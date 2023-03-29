@@ -15,24 +15,18 @@ Movie.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
+    year: {
       type: DataTypes.STRING,
+      allowNull: false,
+    },
+    imdbID: {
+      type: DataTypes.FLOAT,
+      allowNull: false,
     },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
-    },
-    movie_ratings: {
-      type: DataTypes.FLOAT,
-      allowNull: false,
-    },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
     },
   },
   {
