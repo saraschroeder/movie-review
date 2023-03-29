@@ -1,3 +1,8 @@
+const link = document.createElement('link');
+link.rel = 'stylesheet';
+link.href = 'login.css';
+document.head.appendChild(link);
+
 const loginFormHandler = async (event) => {
     event.preventDefault();
   
