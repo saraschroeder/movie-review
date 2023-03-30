@@ -1,25 +1,18 @@
 <head> 
- <!-- Import Materialize CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-<!-- Import Materialize JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     
   
 </head>
-<!-- Loop over each object in the movies array -->
 {{#each movies as |movie| }}
 <div class="card">
-  {{!-- <div class="card-image waves-effect waves-block waves-light"> --}}
-    {{!-- <img class="activator" src="image/R.jpg"> --}}
     <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
       {{{get_emoji}}}
       <a href="/movie/{{movie.id}}">{{movie.name}}</a>
     </h2>
     <p>
       <span for="img" aria-label="money">📽 MAYBE REMOVE THIS ICON?</span>
-      <!-- Pass needed_funding value to the helper function -->
       <span class="dollar-amount">{{format_amount movie.needed_funding}}</span>
       ADD STAR CODE HERE IN HOMEPAGE.HANDLEBARS
 
@@ -34,16 +27,3 @@
   </div>
 </div>
 {{/each}}
-{{!-- <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="images/office.jpg">
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      <p><a href="#">This is a link</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-    </div>
-  </div> --}}

@@ -8,12 +8,9 @@
   <script src="https://kit.fontawesome.com/12ac653a61.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
-  <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-      <!--Let browser know website is optimized for mobile-->
       
   </head>
 <body> 
@@ -24,7 +21,6 @@
         <a href="/">Review a movie!</a>
       </h1>
       <nav>
-        <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
@@ -32,12 +28,10 @@
         <a href="/login">Login</a>
         {{/if}}
         <a href="/">Home</a>
-        {{!-- <a href="/movies">Movies</a>  --}}
         <a href="/about">About</a> 
       </nav>
     </header>
     <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
       {{{ body }}}
     </main>
     <footer>
@@ -45,7 +39,6 @@
     </footer>
   </div>
 
-  <!-- Render script for logged in users only -->
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
