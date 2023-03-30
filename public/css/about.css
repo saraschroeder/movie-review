@@ -8,3 +8,8 @@ body {
     background-repeat: no-repeat;
    
   }
+
+  .row {
+    display: flex;
+    margin-top: 20%;
+  }
