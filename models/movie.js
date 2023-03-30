@@ -15,10 +15,26 @@ Movie.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+
+
+
+
+
+
+    //we are getting an error on this section of code
     year: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+
+
+
+
+
+
+
+
+
     imdbID: {
       type: DataTypes.STRING,
       allowNull: true,

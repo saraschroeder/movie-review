@@ -5,6 +5,5 @@ body {
     color: hwb(200 12% 31%);
     background-image: url('movie.png');
     background-size:auto;  
-    /* background-repeat: no-repeat; */
    
   }
