@@ -19,7 +19,6 @@ const seedDatabase = async () => {
   process.exit(0);
 };
 
-// //movie search function//
 
 function searchMovies() {
   const url = `http://www.omdbapi.com/?s=jack&apikey=${apiKey}&`;
