@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: hwb(200 12% 31%);
+    color:hotpink;
     background-image: url('movie.png');
     background-size: cover;  
     background-repeat: no-repeat;
