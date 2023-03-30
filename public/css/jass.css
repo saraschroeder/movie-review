@@ -1068,8 +1068,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: 150px;
+    margin-right: 150px;
   }
   
   [class*='col-'] {

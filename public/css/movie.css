@@ -4,7 +4,7 @@ body {
     line-height: 1.5;
     color: hwb(200 12% 31%);
     background-image: url('movie.png');
-    background-size:auto;  
-    /* background-repeat: no-repeat; */
+    background-size: cover;  
+    background-repeat: no-repeat;
    
   }
