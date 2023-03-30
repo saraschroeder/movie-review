@@ -19,7 +19,8 @@ This is a fully deployed application hosted on Heroku. No installation needed. S
 ## Usage
 Someone can use this application by searching the data base of movies and leaving reviews of it, or they can look up a movie that they want to watch to read reviews before they spend the time to watch it. 
 
----------------------------------------------------------------------------------------------------------------------------------------------------
+![alt text](./public/images/Screenshot1.png)
+![alt text](./public/images/Screenshot2.png)
 
 
 here is a great place for you to upload screen shots or even a screen record of your application.  But remember to delete this line of text first
