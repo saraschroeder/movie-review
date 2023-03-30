@@ -74,10 +74,6 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/about', (req, res) => {
-  // if (req.session.logged_in) {
-  //   res.redirect('/about')
-  //   return;
-  // }
 console.log(req);
   res.render('about')
 })
