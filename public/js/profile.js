@@ -4,8 +4,7 @@ const newFormHandler = async (event) => {
 
   const name = document.querySelector('#movie-name').value.trim();
   const movie_rating = document.querySelector('#movie-rating').value.trim();
-  const year = document.querySelector('#movie-year');
-  // .value.trim();
+  const year = document.querySelector('#movie-year').value.trim();
   const description = document.querySelector('#movie-desc').value.trim();
 
   if (name && movie_rating && description) {
