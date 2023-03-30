@@ -1,4 +1,4 @@
-import sheet from './index.css' assert { type: 'css' };
+// import sheet from './index.css' assert { type: 'css' };
 const User = require('./user');
 const Movie = require('./movie');
 
