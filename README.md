@@ -22,11 +22,6 @@ Someone can use this application by searching the data base of movies and leavin
 ![alt text](./public/images/Screenshot1.png)
 ![alt text](./public/images/Screenshot2.png)
 
-
-here is a great place for you to upload screen shots or even a screen record of your application.  But remember to delete this line of text first
-
-
----------------------------------------------------------------------------------------------------------------------------------------------------
 ## Contributions 
 [Sara Schroeder](https://github.com/saraschroeder);
 [Jonah Kane](https://github.com/jonahkane);
